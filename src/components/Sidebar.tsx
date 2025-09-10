@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils';
 
 const navigationItems = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
-  { name: 'My Courses', href: '/courses', icon: BookOpen },
+  { name: 'Lessons', href: '/lessons', icon: BookOpen },
   { name: 'Live Classes', href: '/live-classes', icon: Video },
   { name: 'Tests', href: '/tests', icon: FileText },
   { name: 'Communities', href: '/communities', icon: Users },

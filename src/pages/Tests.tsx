@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Sidebar from '@/components/Sidebar';
 import TopBar from '@/components/TopBar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -203,9 +204,11 @@ const Tests = () => {
                         <div className="text-sm text-muted-foreground">
                           {test.attempts > 0 ? `${test.attempts} attempt${test.attempts > 1 ? 's' : ''} used` : 'No attempts yet'}
                         </div>
-                        <Button>
-                          Start Test
-                        </Button>
+                        <Link to={`/test/${test.id}`}>
+                          <Button>
+                            Start Test
+                          </Button>
+                        </Link>
                       </div>
                     </CardContent>
                   </Card>
